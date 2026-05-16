@@ -21,4 +21,8 @@ public class Agendamento {
     @ManyToOne
     @JoinColumn(name = "id_aluno", nullable = false)
     private Aluno aluno;
+
+    @ManyToOne
+    @JoinColumn(name = "id_atendente", nullable = false)
+    private Atendente atendente;
 }

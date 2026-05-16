@@ -18,7 +18,7 @@ public class Matricula {
     private Long id;
 
     @OneToOne
-    @JoinColumn(name = "id_aluno")
+    @JoinColumn(name = "id_aluno", unique = true)
     private Aluno aluno;
 
     @ManyToOne
